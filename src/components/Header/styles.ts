@@ -18,6 +18,13 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
   }
+  @media (min-width: 768px) { 
+    > div {
+      margin: 2rem;
+      max-width: 768px;
+      margin: 0 auto; 
+    }
+  }
 `;
 
 export const HeaderButtonsContainer = styled.div`

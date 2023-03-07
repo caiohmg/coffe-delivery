@@ -37,6 +37,9 @@ export const InputStyleContainer = styled.div<InputContainerProps>`
     css`
       border-color: ${theme.colors["base-error"]};
     `}
+    @media (max-width: 768px) {
+    height: 2.25rem;
+  }
 `;
 
 export const InputStyled = styled.input`
@@ -51,6 +54,9 @@ export const InputStyled = styled.input`
   &::placeholder {
     color: ${({ theme }) => theme.colors["base-label"]};
   }
+  @media (max-width: 768px) {
+    font-size: 0.625rem;
+  }
 `;
 
 export const RightText = styled.p`
@@ -58,4 +64,8 @@ export const RightText = styled.p`
   margin-right: 0.75rem;
   font-style: italic;
   color: ${({ theme }) => theme.colors["base-label"]};
+
+  @media (max-width: 768px) {
+    font-size: 0.625rem;
+  }
 `;

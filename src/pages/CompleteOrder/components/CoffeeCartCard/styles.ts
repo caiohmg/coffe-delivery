@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const CoffeeCartCardContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors["base-button"]};
   padding-bottom: 1.5rem;
@@ -27,7 +29,9 @@ export const CoffeeCartCardContainer = styled.div`
   }
 `;
 
+
 export const ActionsContainer = styled.div`
+  
   margin-top: 0.5rem;
   height: 2rem;
   display: flex;
@@ -39,6 +43,8 @@ export const ActionsContainer = styled.div`
     height: 100%;
   }
 `;
+
+
 
 export const RemoveButton = styled.button`
   display: flex;

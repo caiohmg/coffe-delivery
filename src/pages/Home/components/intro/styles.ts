@@ -1,9 +1,9 @@
 import { rgba } from "polished";
 import styled from "styled-components";
-
 import introBackgroundImg from "../../../../assets/intro-background.png";
 import { TitleText } from "../../../../components/Typography";
 
+const mobileSize = "768px";
 
 export const IntroContainer = styled.section`
   width: 100%;
@@ -21,24 +21,43 @@ export const IntroContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: ${mobileSize}) {
+    height: 24rem;
+  }
 `;
 
 export const IntroContent = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 3.5rem;
+
+  @media only screen and (min-width: ${mobileSize}) {
+    flex-direction: row;
+  }
 `;
 
 export const IntroTitle = styled(TitleText)`
   margin-bottom: 1rem;
+  text-align: center;
+
+  @media only screen and (min-width: ${mobileSize}) {
+    text-align: left;
+  }
 `;
 
 export const BenefitsContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   row-gap: 1.25rem;
-  margin-top: 4.125rem;
+  margin-top: 2.5rem;
+
+  @media only screen and (min-width: ${mobileSize}) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4.125rem;
+  }
 `;

@@ -4,6 +4,11 @@ export const InfoWithIconContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.75rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 interface IconsContainerProps {
@@ -21,4 +26,8 @@ export const IconContainer = styled.div<IconsContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.75rem;
+  }
 `;

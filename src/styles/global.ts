@@ -50,4 +50,16 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 2rem;
     background: ${({ theme }) => theme.colors["brand-purple"]}
   }
+
+  @media screen and (max-width: 768px) {
+    body, input, textarea, button {
+      font-size: ${({ theme }) => theme.textSizes["text-regular-s"]}
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    body, input, textarea, button {
+      font-size: ${({ theme }) => theme.textSizes["text-regular-s"]}
+    }
+  }
 `;

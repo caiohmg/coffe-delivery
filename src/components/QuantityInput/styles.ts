@@ -36,6 +36,14 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
     css`
       padding: 0.3rem 0.5rem;
     `}
+
+    @media (max-width: 480px) {
+    padding: 0.3rem 0.5rem;
+    gap: 2px;
+    input {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export const IconWrapper = styled.button.attrs({

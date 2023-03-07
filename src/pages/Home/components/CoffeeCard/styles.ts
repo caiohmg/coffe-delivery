@@ -91,5 +91,8 @@ export const AddCartWrapper = styled.div`
     &:hover {
       background: ${({ theme }) => theme.colors["brand-purple"]};
     }
+    @media (max-width: 768px) {
+      border-radius: 6px;
+    }
   }
 `;
